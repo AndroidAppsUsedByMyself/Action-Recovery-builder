@@ -14,31 +14,31 @@ on:
       DEVICE_TREE_URL:
         description: 'DEVICE_TREE_URL'
         required: true
-        default: 'https://github.com/Xpsoted/device_samsung_lykanltechn-twrp'
+        default: 'https://github.com/Ko-Hi-Dev/device_motorola_pstar'
       DEVICE_TREE_BRANCH:
         description: 'DEVICE_TREE_BRANCH'
         required: true
-        default: 'omni-10'
+        default: 'main'
       DEVICE_PATH:
         description: 'DEVICE_PATH'
         required: true
-        default: 'device/samsung/lykanltechn'
+        default: 'device/motorola/pstar'
       COMMON_TREE_URL:
         description: 'COMMON_TREE_URL (if no common tree, leave blank)'
         required: false
-        default: 'https://github.com/Xpsoted/android_vendor_qcom_opensource_commonsys.git'
+        default: ''
       COMMON_PATH:
         description: 'COMMON_PATH (if no common tree, leave blank)'
         required: false
-        default: 'vendor/qcom/opensource/commonsys'
+        default: ''
       DEVICE_NAME:
         description: 'DEVICE_NAME'
         required: true
-        default: 'lykanltechn'
+        default: 'pstar'
       MAKEFILE_NAME:
         description: 'MAKEFILE_NAME'
         required: true
-        default: 'omni_lykanltechn'
+        default: 'omni_pstar'
       BUILD_TARGET:
         description: 'BUILD_TARGET'
         required: true
