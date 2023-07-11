@@ -146,8 +146,8 @@ jobs:
 
     - name: Building recovery
       run: |
-        chmod -x ${{ github.event.inputs.DEVICE_PATH }}/mkbootimg
         wget -O ${{ github.event.inputs.DEVICE_PATH }}/mkbootimg https://raw.githubusercontent.com/Xpsoted/device_samsung_lykanltechn-twrp/android-12/mkbootimg
+        chmod -x ${{ github.event.inputs.DEVICE_PATH }}/mkbootimg
         source build/envsetup.sh
         export ALLOW_MISSING_DEPENDENCIES=true
         lunch ${{ github.event.inputs.MAKEFILE_NAME }}-eng && make clean && make ${{ github.event.inputs.BUILD_TARGET }}image -j$(nproc --all)
