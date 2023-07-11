@@ -46,7 +46,7 @@ on:
 
 jobs:
   build:
-    if: github.event.repository.owner.id == github.event.sender.id
+    if: true
     runs-on: ubuntu-20.04
     steps:
     - name: Display Run Parameters
